@@ -1,0 +1,15 @@
+<button type="button" class="btn btn-outline-primary" [disabled]="!AllowedAddServer">Primary</button>
+
+server id =  {{ServerId}}
+server status =  {{Getserverstatus()}}
+<h1>===========================================</h1>
+<br>
+<button type="button" class="btn btn-outline-primary" (click)="oncreateserver()">create server</button>
+<h1>{{servercreationstatus}}</h1>
+
+<h1>===========================================</h1>
+<h1>two way binding</h1>
+
+<input type="text" [(ngModel)]="server_name">
+<h4>{{server_name}}</h4>
+========================================================
